@@ -14,10 +14,10 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array.select {|item| item.to_s.start_with?('wa')}.first
+  array.find {|item| item.to_s.start_with?('wa')}
 end
 
-def remove_non_strings(array)
+def remove_non_strings(array) 
   array.select {|item| item.is_a?(String)}
 end
 
